@@ -3,7 +3,7 @@ import { useAuthContext } from "./hooks/useAuthContext";
 
 // pages & components
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+import ButtonAppBar from "./components/ButtonAppBar";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar />
+        <ButtonAppBar />
         <div className="pages">
           <Routes>
             <Route

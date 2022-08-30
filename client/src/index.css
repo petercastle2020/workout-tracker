@@ -112,6 +112,10 @@ nav a {
   margin-left: 10px;
 }
 
+.span-email {
+  margin: 15px;
+}
+
 nav button {
   background: #fff;
   color: var(--primary);
