@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useWorkoutsContext } from "../hooks/useWorkoutsContext";
 import { useAuthContext } from "../hooks/useAuthContext";
 
+// MUI
+import Button from "@mui/material/Button";
+
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext();
   const { user } = useAuthContext();
@@ -80,7 +83,11 @@ const WorkoutForm = () => {
         value={load}
         className={emptyFields.includes("load") ? "error" : ""}
       />
-      <button>Add Workout</button>
+
+      <Button color="inherit" variant="outlined" type="submit">
+        Add Workout
+      </Button>
+
       {error && <div className="error">{error}</div>}
     </form>
   );
